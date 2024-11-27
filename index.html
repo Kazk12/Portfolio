@@ -1,86 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <script defer type="module" src="./script.js"></script>
-    <link rel="stylesheet" href="./style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-</head>
-<body>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header class="header">
-        <a href="#home" class="logo">
-            <span>Moi</span>
-        </a>
+      <a href="#home" class="logo">
+        <span>Moi</span>
+      </a>
 
-        <i class="bx bx-menu" id="menu-icon"></i>
+      <i class="bx bx-menu" id="menu-icon"></i>
 
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#projets">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#projets">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </header>
     <main>
-        <section class="home" id="home">
-            <div class="home-content">
-                <h1>Salut, c'est <span>Moi</span></h1>
-                <h3 class="text-animation">
-                    Je suis un <span></span>
-                </h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde officia laboriosam beatae minima expedita doloribus. Tempore, ullam ad! Temporibus, quo facilis saepe debitis doloribus et mollitia voluptatum sequi consequuntur animi?</p>
-                <div class="social-icons">
-                    <a href="#">
-                        <i class="bx bxl-github"></i>
-                    </a>
-                    <a href="#">
-                        <i class="bx bxl-linkedin-square"></i>
-                    </a>
-                    <a href="#">
-                        <i class="bx bxl-instagram-alt"></i>
-                    </a>
-                    <a href="#">
-                        <i class="bx bxl-twitter"></i>
-                    </a>
-                </div>
-                <div class="btn-group">
-                    <a href="#" class="btn">Hire</a>
-                    <a href="#contact" class="btn">Contact</a>
-                </div>   
+      <section class="home" id="home">
+        <div class="home-content">
+          <h1>Salut, c'est <span>Moi</span></h1>
+          <h3 class="text-animation">Je suis un <span></span></h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde
+            officia laboriosam beatae minima expedita doloribus. Tempore, ullam
+            ad! Temporibus, quo facilis saepe debitis doloribus et mollitia
+            voluptatum sequi consequuntur animi?
+          </p>
+          <div class="social-icons">
+            <a href="#">
+              <i class="bx bxl-github"></i>
+            </a>
+            <a href="#">
+              <i class="bx bxl-linkedin-square"></i>
+            </a>
+            <a href="#">
+              <i class="bx bxl-instagram-alt"></i>
+            </a>
+            <a href="#">
+              <i class="bx bxl-twitter"></i>
+            </a>
+          </div>
+          <div class="btn-group">
+            <a href="#" class="btn">Hire</a>
+            <a href="#contact" class="btn">Contact</a>
+          </div>
+        </div>
+        <div class="home-img">
+          <img src="./images/Gojo.jfif" alt="Image De Gojo" />
+        </div>
+      </section>
+      <section class="about" id="about">
+        <div class="about-img">
+          <img src="./images/Gojo.jfif" alt="Image Du Goat" />
+        </div>
+        <div class="about-content">
+          <h2 class="heading">About <span>Me</span></h2>
+          <h3 class="text-animation">
+            <span></span>
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+            vitae ab veritatis, quo voluptatibus soluta dolor assumenda nobis
+            architecto cupiditate.
+          </p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+      </section>
+      <section class="services" id="services">
+        <h2 class="heading">Services</h2>
+        <div class="service-container">
+          <div class="service-box">
+            <div class="service-info">
+              <i class="bx bxl-figma"></i>
+              <h4>UI / UX Designer</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Corrupti dicta voluptatum nisi voluptas cumque exercitationem ab
+                pariatur soluta esse. Sunt repellendus maiores cum, cupiditate
+                commodi labore est! Nesciunt, sunt culpa?
+              </p>
             </div>
-            <div class="home-img">
-                <img src="./images/Gojo.jfif" alt="Image De Gojo">
+          </div>
+
+          <div class="service-box">
+            <div class="service-info">
+              <i class="bx bx-code"></i>
+              <h4>Frontend Development</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Corrupti dicta voluptatum nisi voluptas cumque exercitationem ab
+                pariatur soluta esse. Sunt repellendus maiores cum, cupiditate
+                commodi labore est! Nesciunt, sunt culpa?
+              </p>
             </div>
-        </section>
-        <section class="about" id="about">
-            <div class="about-img">
+          </div>
+
+          <div class="service-box">
+            <div class="service-info">
+              <i class="bx bx-code-curly"></i>
+              <h4>Backend Development</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Corrupti dicta voluptatum nisi voluptas cumque exercitationem ab
+                pariatur soluta esse. Sunt repellendus maiores cum, cupiditate
+                commodi labore est! Nesciunt, sunt culpa?
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects" id="">
+        <h2 class="heading">Projects</h2>
+        <div class="projects-box">
+            <div class="project-card">
                 <img src="./images/Gojo.jfif" alt="Image Du Goat">
+                <h3>Project 1</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus facilis vel, eum eius in fuga obcaecati odit veritatis provident? Corporis.</p>
+                <div class="btn">See Project</div>
             </div>
-            <div class="about-content">
-                <h2 class="heading">About <span>Me</span> </h2>
-                <h3 class="text-animation">
-                    <span></span>
-                </h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima vitae ab veritatis, quo voluptatibus soluta dolor assumenda nobis architecto cupiditate.</p>
-                <a href="#" class="btn">Read More</a>
+
+
+            <div class="project-card">
+                <img src="./images/Gojo.jfif" alt="Image Du Goat">
+                <h3>Project 2</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus facilis vel, eum eius in fuga obcaecati odit veritatis provident? Corporis.</p>
+                <div class="btn">See Project</div>
             </div>
-        </section>
+
+
+            <div class="project-card">
+                <img src="./images/Gojo.jfif" alt="Image Du Goat">
+                <h3>Project 3</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus facilis vel, eum eius in fuga obcaecati odit veritatis provident? Corporis.</p>
+                <div class="btn">See Project</div>
+            </div>
+
+
+            <div class="project-card">
+                <img src="./images/Gojo.jfif" alt="Image Du Goat">
+                <h3>Project 4</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus facilis vel, eum eius in fuga obcaecati odit veritatis provident? Corporis.</p>
+                <div class="btn">See Project</div>
+            </div>
 
 
 
+            <div class="project-card">
+                <img src="./images/Gojo.jfif" alt="Image Du Goat">
+                <h3>Project 5</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus facilis vel, eum eius in fuga obcaecati odit veritatis provident? Corporis.</p>
+                <div class="btn">See Project</div>
+            </div>
 
 
-
-
-
+            <div class="project-card">
+                <img src="./images/Gojo.jfif" alt="Image Du Goat">
+                <h3>Project 6</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus facilis vel, eum eius in fuga obcaecati odit veritatis provident? Corporis.</p>
+                <div class="btn">See Project</div>
+            </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="social">
+            <a href="#">
+                <i class="bx bxl-github"></i>
+              </a>
+              <a href="#">
+                <i class="bx bxl-linkedin-square"></i>
+              </a>
+              <a href="#">
+                <i class="bx bxl-instagram-alt"></i>
+              </a>
+              <a href="#">
+                <i class="bx bxl-twitter"></i>
+              </a>
+        </div>
+        <ul class="list">
+            <li>
+                <a href="#">FAQ</a>
+            </li>
+            <li>
+                <a href="#services">Services</a>
+            </li>
+            <li>
+                <a href="#about">About Me</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+        </ul>
+        <p class="copyright">
+            @Moi | All Rights Reserved
+        </p>
+      </footer>
     </main>
-    
-</body>
+  </body>
 </html>
 
-
-
-<!-- https://www.youtube.com/watch?v=ygSTcnWZ_fI 20 minutes de la vidéo pour le portfolio -->
+<!-- https://www.youtube.com/watch?v=ygSTcnWZ_fI 27.50 minutes de la vidéo pour le portfolio -->
