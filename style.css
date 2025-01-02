@@ -31,7 +31,7 @@ body{
     position: fixed;
     top: 0;
     left: 0;
-    padding: 4rem 12% 4rem;
+    padding: 4rem 12% 3rem;
     background: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
     display: flex;
@@ -77,7 +77,7 @@ body{
 
 
 section {
-    min-height: 100vh;
+    /* min-height: 100vh; */
     padding: 10rem 12% 10rem;
 }
 .home{
@@ -90,7 +90,7 @@ section {
 .home-content{
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
     text-align: right;
     justify-content: center;
 }
@@ -102,6 +102,7 @@ span {
 }
 .home-content h3 {
     margin-bottom: 2rem;
+    text-align: center;
     margin-top: 1rem;
     font-size: 3.5rem;
 }
@@ -174,17 +175,7 @@ span {
     align-items: center;
     gap: 1.5rem;
 }
-.btn-group a:nth-last-of-type(2){
-    background-color: black;
-    color: var(--main-color);
-    border: 2px solid var(--main-color);
-    box-shadow: 0 0 25px transparent;
-}
-.btn-group a:nth-last-of-type(2):hover{
-    box-shadow: 0 0 25px var(--main-color);
-    background-color: var(--main-color);
-    color: black;
-}
+
 
 .text-animation{
     font-size: 34px;
@@ -193,6 +184,7 @@ span {
 }
 .text-animation span{
     position: relative;
+    text-wrap: nowrap;
 }
 .text-animation span::before{
     content:"Web Developer";
@@ -216,25 +208,10 @@ span {
 }
 @keyframes words{
     0%,
-    20%{
-        content: "Frontend Designer";
-    }
-    21%,
-    40%{
-        content: "Test";
-    }
-    41%,
-    60%{
-        content: "UI/ UX Designer";
-    }
-    61%,
-    80%{
-        content: "Web Developer";
-    }
-    81%,
     100%{
-        content: "Software Tester";
+        content: "Developpeur Web Junior";
     }
+    
 
 }
 @keyframes typing {
@@ -333,38 +310,40 @@ span {
     background-color: var(--bg-color);
     width: 50px;
 }
-.services {
+.technologies {
     background: var(--bg-color);
     color: black;
 }
-.services h2 {
+.technologies
+
+h2 {
     margin-bottom: 5rem;
     color: var(--text-color);
 }
-.service-container {
+.technologie-container {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
     align-items: center;
     gap: 2.5rem;
 }
-.service-box{
+.technologie-box{
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: var(--main-color);
-    height: 600px;
+    height: 200px;
     border-radius: 3rem;
     border: 5px solid transparent;
     cursor: pointer;
     transition: 0.4s ease-in-out;
 }
-.service-box:hover {
+.technologie-box:hover {
     background: var(--secondary-bg-color);
     color: var(--main-color);
     border: 5px solid var(--main-color);
     transform: scale(1.03);
 }
-.service.box  {
+.technologie.box  {
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -373,7 +352,7 @@ span {
     align-items: center;
     padding: 5rem 5rem;
 }
-.service-info{
+.technologie-info{
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -382,17 +361,17 @@ span {
     align-items: center;
     padding: 5rem 5rem;
 }
-.service-info h4 {
+.technologie-info h4 {
     font-size: 4rem;
     margin: 2rem 0;
     font-weight: 800;
 }
-.service-info p{
+.technologie-info p{
     font-size: 1.4rem;
     font-weight: 600;
     line-height: 1.7;
 }
-.service-info i{
+.technologie-info i{
     font-size: 8rem;
 }
 
@@ -404,44 +383,49 @@ span {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     place-items: center;
-    margin: 5rem 0;
-    gap: 3rem;
-    row-gap: 5rem;
+    gap: 2rem;
+    row-gap: 3rem;
 }
-.project-card{
-    height: 600px;
+.project-card {
+    height: 450px;
     max-width: 450px;
     background-color: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(30px);
     border: 2px solid var(--main-color);
-    border-radius: 5rem;
+    border-radius: 3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between; /* Assure que le contenu soit bien espacé */
     text-align: center;
     gap: 2rem;
-    padding: 5rem 2rem;
+    padding: 2rem; /* Réduis les marges pour éviter trop de vide */
     overflow: hidden;
     cursor: pointer;
     box-shadow: 0 0 5px var(--main-color);
     transition: 0.4s ease;
 }
-.project-card:hover{
-    box-shadow: 0 0 25px var(--main-color),
-                0 0 50px var(--main-color);
-    transform: scale(1.02);            
+
+.project-card img {
+    width: 100%; /* L'image occupe toute la largeur du conteneur */
+    height: 200px; /* Hauteur fixe pour toutes les images */
+    object-fit: cover; /* L'image remplira l'espace sans être déformée */
 }
-.project-card img{
-    max-width: 18vw;
-    object-fit: cover;
-}
-.project-card h3{
+
+.project-card h3 {
     font-size: 3rem;
 }
+
 .project-card p {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
 }
+
+.project-card:hover {
+    box-shadow: 0 0 25px var(--main-color),
+                0 0 50px var(--main-color);
+    transform: scale(1.02);
+}
+
 .footer {
     position: relative;
     bottom: 0;
@@ -499,11 +483,11 @@ span {
     font-size: 16px;
     color: var(--text-color);
 }
-@media(max-width:1285px){
+/* @media(max-width:1285px){
     html{
         font-size: 55%;
     }
-    .service-container{
+    .technologie-container{
         padding-bottom: 7rem;
         grid-template-columns: repeat(1,1fr);
         margin: 0 5rem;
@@ -592,10 +576,10 @@ span {
     .about img{
         width: 50vw;
     }
-    .services h2{
+    .technologies h2{
         margin-bottom: 3rem;
     }
-    .service-container{
+    .technologie-container{
         grid-template-columns: repeat(1,1fr);
     }
     .projects-box{
@@ -603,5 +587,162 @@ span {
     }
     .projects-box img{
         min-width: 42rem;
+    }
+} */
+
+
+
+
+
+/* Responsive design pour les petits écrans */
+@media (max-width: 1200px) {
+    .home {
+        gap: 10rem; /* Réduire l'écart entre le texte et l'image */
+    }
+
+    .home-content h1 {
+        font-size: 5rem; /* Réduire la taille de la police sur des écrans moyens */
+    }
+
+    .home-content h3 {
+        font-size: 2.8rem; /* Taille du sous-titre */
+    }
+
+    .home-img img {
+        width: 40vw; /* Réduire la taille de l'image */
+    }
+
+    .about {
+        gap: 5rem; /* Réduire l'écart */
+    }
+
+    .technologie-container {
+        grid-template-columns: repeat(2, 1fr); /* Utiliser 2 colonnes pour les technologies */
+    }
+
+    .projects-box {
+        grid-template-columns: repeat(2, 1fr); /* Utiliser 2 colonnes pour les projets */
+    }
+
+    .project-card {
+        height: 500px; /* Réduire la hauteur des cartes de projet */
+    }
+
+    .technologie-box, .technologie-info, .project-card {
+        padding: 2rem; /* Réduire les espacements internes */
+    }
+}
+
+@media (max-width: 768px) {
+    /* Pour les écrans de taille moyenne (tablettes) */
+    .header {
+        padding: 2rem 5%; /* Ajuster le padding pour la barre de navigation */
+    }
+
+    .navbar a {
+        font-size: 1.4rem; /* Réduire la taille de la police pour le menu */
+        margin-left: 2rem; /* Réduire l'espacement entre les liens du menu */
+    }
+
+    .home {
+        flex-direction: column; /* Disposer le texte et l'image en colonne */
+        gap: 5rem; /* Réduire l'écart */
+    }
+
+    .home-content h1 {
+        font-size: 4rem; /* Taille réduite du titre */
+    }
+
+    .home-content h3 {
+        font-size: 2.4rem; /* Ajuster la taille du sous-titre */
+    }
+
+    .home-img img {
+        width: 50vw; /* Réduire la taille de l'image */
+    }
+
+    .about {
+        flex-direction: column; /* Disposition en colonne */
+        gap: 3rem; /* Réduire l'écart */
+    }
+
+    .about-img img {
+        width: 60vw; /* Ajuster la taille de l'image */
+    }
+
+    .technologies {
+        padding: 5rem 5%;
+    }
+
+    .technologie-container {
+        grid-template-columns: 1fr; /* Passer à une colonne sur les petits écrans */
+    }
+
+    .project-card img {
+        width: 80%; /* Ajuster la taille des images des projets */
+    }
+
+    .projects-box {
+        grid-template-columns: 1fr; /* Passer à une colonne sur les petits écrans */
+    }
+
+    .footer .social a {
+        font-size: 20px; /* Réduire la taille des icônes sociales */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Pour les petits écrans (téléphones) */
+    .header {
+        padding: 2rem 3%; /* Ajuster les espacements */
+    }
+
+    .logo {
+        font-size: 2.5rem; /* Réduire la taille du logo */
+    }
+
+    .navbar {
+        display: none; /* Cacher le menu de navigation pour les petits écrans */
+    }
+
+    #menu-icon {
+        display: block; /* Afficher l'icône du menu hamburger */
+    }
+
+    .home {
+        gap: 3rem;
+        text-align: center; /* Centrer le texte et l'image */
+    }
+
+    .home-content h1 {
+        font-size: 3.5rem; /* Taille réduite */
+    }
+
+    .home-content h3 {
+        font-size: 2rem; /* Taille réduite */
+    }
+
+    .home-img img {
+        width: 60vw; /* Ajuster la taille de l'image */
+    }
+
+    .about, .technologies, .projects {
+        padding: 5rem 3%; /* Réduire le padding */
+    }
+
+    .technologie-container {
+        grid-template-columns: 1fr; /* Passer à une colonne pour les technologies */
+    }
+
+    .project-card {
+        max-width: 90%; /* Réduire la largeur des cartes */
+    }
+
+    .footer .list {
+        font-size: 14px; /* Réduire la taille du texte du footer */
+    }
+
+    .footer .social a {
+        font-size: 18px; /* Ajuster la taille des icônes sociales */
     }
 }
