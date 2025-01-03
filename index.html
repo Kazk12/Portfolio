@@ -1,15 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Portfolio de Mohand B</title>
     <script defer type="module" src="./script.js"></script>
     <link rel="stylesheet" href="./style.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+
+    <meta property="og:title" content="Portfolio de Mohand B" />
+    <meta
+      property="og:description"
+      content="Découvrez les projets et compétences de Mohand B, développeur web junior."
+    />
+    <meta property="og:image" content="./images/Tsuna.jpg" />
+    <meta property="og:url" content="https://votre-site.com" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Portfolio de Mohand B" />
+    <meta
+      name="twitter:description"
+      content="Découvrez les projets et compétences de Mohand B, développeur web junior."
+    />
+    <meta name="twitter:image" content="./images/Tsuna.jpg" />
   </head>
   <body>
     <header class="header">
@@ -18,179 +34,165 @@
       </a>
 
       <i class="bx bx-menu" id="menu-icon"></i>
+      <nav class="navbarMobile hidden">
+        <a href="#home">Home</a>
+        <a href="#about">A propos</a>
+        <a href="#technologies">Techno</a>
+        <a href="#projets">Projets</a>
+      </nav>
 
       <nav class="navbar">
-        <a href="#home" class="active">Home</a>
-        <a href="#about">About</a>
-        <a href="#technologies">technologies</a>
-        <a href="#projets">Projects</a>
+        <a href="#home">Home</a>
+        <a href="#about">A propos</a>
+        <a href="#technologies">Techno</a>
+        <a href="#projets">Projets</a>
       </nav>
     </header>
     <main>
+      <!-- SECTION HOME -->
+
       <section class="home" id="home">
         <div class="home-content">
-          
-          <h3 class="text-animation">Je suis un 
-            
-            <span></span></h3>
-            <a href="#" download="#" class="btn btn-group">Telecharger mon cv</a>
-          
-          <!-- <div class="social-icons">
-            <a href="#">
-              <i class="bx bxl-github"></i>
-            </a>
-            <a href="#">
-              <i class="bx bxl-linkedin-square"></i>
-            </a>
-            <a href="#">
-              <i class="bx bxl-instagram-alt"></i>
-            </a>
-            <a href="#">
-              <i class="bx bxl-twitter"></i>
-            </a>
-          </div> -->
-         
+          <h3 class="text-animation">
+            Je suis un
+
+            <span></span>
+          </h3>
+          <a href="#" download="#" class="btn btn-group">Télécharger mon cv</a>
         </div>
         <div class="home-img">
-          <img src="./images/Tsuna.jpg" alt="Image De Tsuna" />
+          <img
+            src="./images/Tsuna.jpg"
+            alt="Photo de la personne qui a fait le site"
+          />
         </div>
+
+        <!-- SECTION A PROPOS DE MOI -->
       </section>
       <section class="about" id="about">
         <div class="about-img">
-          <img src="./images/Gojo.jfif" alt="Image De Gojo" />
+          <img
+            src="./images/Gojo.jfif"
+            alt="Photo de la personne qui a fait le site"
+          />
         </div>
         <div class="about-content">
-          <h2 class="heading">About <span>Me</span></h2>
-          <h3 class="text-animation">
-            <span></span>
-          </h3>
+          <h2 class="heading">A propos de <span>Moi</span></h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
-            vitae ab veritatis, quo voluptatibus soluta dolor assumenda nobis
-            architecto cupiditate.
+            J'aime bien apprendre de nouvelle chose, j'ai commencé à apprécier
+            le <span>développement web</span> quand j'étais à la faculté de
+            science informatique. <br />
+            <br />
+            Je suis actuellement en formation chez <span>Garage404</span> afin
+            de devenir <span>développeur web junior</span> et d'en faire mon
+            métier.
           </p>
-          <a href="#" class="btn">Read More</a>
+          <a href="#" download="#" class="btn">En apprendre plus</a>
         </div>
       </section>
+
+      <!-- SECTION TECHNOLOGIES -->
+
       <section class="technologies" id="technologies">
         <h2 class="heading">Mes technologies</h2>
         <div class="technologie-container">
-          
-        
-
           <div class="technologie-box">
             <div class="technologie-info">
-               
-             <h4>Frontend </h4>
+              <h4>Frontend</h4>
               <p>
-                <i class="bx bxl-html5"></i>
-                <i class="bx bxl-css3"></i>
-                <i class="bx bxl-javascript"></i>
+                <i class="bx bxl-html5" aria-label="Icone de HTML"></i>
+                <i class="bx bxl-css3" aria-label="Icone de css"></i>
+                <i
+                  class="bx bxl-javascript"
+                  aria-label="Icone de javascript"
+                ></i>
               </p>
             </div>
           </div>
 
           <div class="technologie-box">
             <div class="technologie-info">
-              <h4>Backend </h4>
+              <h4>Backend</h4>
               <p>
-               <!-- IMAGE DE PHP ET MYSQL / SYMFONY / REACT JS -->
-                <i class="bx bxl-php"></i>
-                <i class="bx bxl-react"></i>
-                
+                <!-- IMAGE DE PHP ET MYSQL / SYMFONY / REACT JS -->
+                <i class="bx bxl-php" aria-label="Icone de php"></i>
+                <i class="bx bxl-react" aria-label="Icone de react"></i>
               </p>
             </div>
           </div>
         </div>
       </section>
 
+      <!-- SECTION PROJETS -->
       <section class="projects" id="projets">
         <h2 class="heading">Projects</h2>
         <div class="projects-box">
-            <div class="project-card">
-                <img src="./images/Isagi.jpg" alt="Image Du 1er Projet">
-                <h3>Aura</h3>
-                <p>Un petit projet fait en groupe, le but étant de faire un instagram like</p>
-                <a href="#" class="btn">Voir le projet</a>
-            </div>
+          <div class="project-card">
+            <img src="./images/Isagi.jpg" alt="Image Du 1er Projet" />
+            <h3>Aura</h3>
+            <p>
+              Un petit projet fait en groupe, le but étant de faire un instagram
+              like
+            </p>
+            <a href="#" class="btn">Voir le projet</a>
+          </div>
 
+          <div class="project-card">
+            <img src="./images/Tsuna.jpg" alt="Image du 2eme Projet" />
+            <h3>Drum Pad</h3>
+            <p>
+              Dans ce projet, le but était de faire un drum pad avec des sons.
+            </p>
+            <a href="https://kazk12.github.io/TP-DrumPad/" class="btn"
+              >Voir le projet</a
+            >
+          </div>
 
-            <div class="project-card">
-                <img src="./images/Tsuna.jpg" alt="Image du 2eme Projet">
-                <h3>Project 2</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus facilis vel, eum eius in fuga obcaecati odit veritatis provident? Corporis.</p>
-                <a href="#" class="btn">Voir le projet</a>
-            </div>
-
-
-            <div class="project-card">
-                <img src="./images/Gojo.jfif" alt="Image Du 3eme Projet">
-                <h3>Project 3</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus facilis vel, eum eius in fuga obcaecati odit veritatis provident? Corporis.</p>
-                <a href="#" class="btn">Voir le projet</a>
-            </div>
-
-
-            <div class="project-card">
-                <img src="./images/Gojo.jfif" alt="Image Du Goat">
-                <h3>Project 4</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus facilis vel, eum eius in fuga obcaecati odit veritatis provident? Corporis.</p>
-                <a href="#" class="btn">Voir le projet</a>
-            </div>
-
-
-
-            <div class="project-card">
-                <img src="./images/Gojo.jfif" alt="Image Du Goat">
-                <h3>Project 5</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus facilis vel, eum eius in fuga obcaecati odit veritatis provident? Corporis.</p>
-                <a href="#" class="btn">Voir le projet</a>
-            </div>
-
-
-            <div class="project-card">
-                <img src="./images/Gojo.jfif" alt="Image Du Goat">
-                <h3>Project 6</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus facilis vel, eum eius in fuga obcaecati odit veritatis provident? Corporis.</p>
-                <a href="#" class="btn">Voir le projet</a>
-            </div>
+          <div class="project-card">
+            <img src="./images/Gojo.jfif" alt="Image Du 3eme Projet" />
+            <h3>Project 3</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus
+              facilis vel, eum eius in fuga obcaecati odit veritatis provident?
+              Corporis.
+            </p>
+            <a href="#" class="btn">Voir le projet</a>
+          </div>
         </div>
       </section>
       <footer class="footer">
-        <div class="social">
-            <a href="#">
-                <i class="bx bxl-github"></i>
-              </a>
-              <a href="#">
-                <i class="bx bxl-linkedin-square"></i>
-              </a>
-              <a href="#">
-                <i class="bx bxl-instagram-alt"></i>
-              </a>
-              <a href="#">
-                <i class="bx bxl-twitter"></i>
-              </a>
-        </div>
         <ul class="list">
-            <li>
-                <a href="#">FAQ</a>
-            </li>
-            <li>
-                <a href="#technologies">technologies</a>
-            </li>
-            <li>
-                <a href="#about">About Me</a>
-            </li>
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#technologies">Techno</a>
+          </li>
+          <li>
+            <a href="#about">A propos</a>
+          </li>
+          <li>
+            <a href="#projects">Projets</a>
+          </li>
+          <br>
+          <li>
+            <a href="#" download="#" class="btn btn-group"
+              >Me contacter</a
+            >
+          </li>
+          <li>
+            <a href="#" download="#" class="btn btn-group"
+              >Github</a
+            >
+          </li>
+          <li>
+            <a href="#" download="#" class="btn btn-group"
+              >Télécharger mon cv</a
+            >
+          </li>
         </ul>
-        <p class="copyright">
-            @Moi | All Rights Reserved
-        </p>
+        <p class="copyright">@Moi | All Rights Reserved</p>
       </footer>
     </main>
   </body>
 </html>
-
-
