@@ -122,6 +122,12 @@ span {
     line-height: 1;
 }
 
+#HomeImg{
+    width: 50%;
+    height: 50%;
+}
+
+
 
 
 .home-img img:hover {
@@ -379,9 +385,10 @@ h2 {
 }
 
 .project-card img {
-    width: 100%; /* L'image occupe toute la largeur du conteneur */
-    height: 200px; /* Hauteur fixe pour toutes les images */
-    object-fit: cover; /* L'image remplira l'espace sans être déformée */
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover; 
+    
 }
 
 .project-card h3 {
@@ -438,92 +445,140 @@ h2 {
 
 
 
-/* Responsive design pour les petits écrans */
 @media(min-width: 1200px){
     .navbar a:hover
     {
         color: var(--secondary-text-color);
         border-bottom: 3px solid var(--secondary-text-color)
     } 
+    
+}
+
+@media (max-width : 1600px){
+    .home-content h1 {
+        font-size: 6rem;
+    }
+    .home-content h3 {
+        font-size: 2.8rem;
+    }
+    .home-content p {
+        font-size: 1.8rem;
+    }
+    .about-content h2 {
+        font-size: 4rem;
+    }
+    .about-content p {
+        font-size: 1.6rem;
+    }
+    .technologie-info h4 {
+        font-size: 3.5rem;
+    }
+    .technologie-info p {
+        font-size: 1.4rem;
+    }
+    .technologie-info i {
+        font-size: 6rem;
+    }
+    .project-card h3 {
+        font-size: 2.8rem;
+    }
+    .project-card p {
+        font-size: 1.4rem;
+    }
+    .footer .list {
+        font-size: 20px;
+    }
+    .footer ul li{
+        display: inline-block;
+        padding: 5px 15px;
+    }
 }
 
 
 
 @media (max-width: 1200px) {
     .home {
-        gap: 10rem; /* Réduire l'écart entre le texte et l'image */
+        flex-direction: column;
+        gap: 5rem;
     }
-
-    .home-content h1 {
-        font-size: 5rem; /* Réduire la taille de la police sur des écrans moyens */
+    .home-content {
+        width: 100%;
+        text-align: center;
     }
-
-    .home-content h3 {
-        font-size: 2.8rem; /* Taille du sous-titre */
-    }
-
+   
     .home-img img {
-        width: 40vw; /* Réduire la taille de l'image */
+        width: 100%; 
+        max-width: 100%;
     }
+
+    .about-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .about-content h2 {
+       width: 100%;
+        text-align: center;
+    }
+
+    
 
     .about {
-        gap: 5rem; /* Réduire l'écart */
+        gap: 5rem; 
     }
 
     .technologie-container {
-        grid-template-columns: repeat(2, 1fr); /* Utiliser 2 colonnes pour les technologies */
+        grid-template-columns: repeat(2, 1fr); 
     }
 
     .projects-box {
-        grid-template-columns: repeat(2, 1fr); /* Utiliser 2 colonnes pour les projets */
+        grid-template-columns: repeat(2, 1fr); 
     }
 
     .project-card {
-        height: 500px; /* Réduire la hauteur des cartes de projet */
+        height: 500px; 
     }
 
     .technologie-box, .technologie-info, .project-card {
-        padding: 2rem; /* Réduire les espacements internes */
+        padding: 2rem; 
     }
 }
 
 @media (max-width: 768px) {
-    /* Pour les écrans de taille moyenne (tablettes) */
+   
     .header {
-        padding: 2rem 5%; /* Ajuster le padding pour la barre de navigation */
+        padding: 2rem 5%; 
     }
 
     .navbar a {
-        font-size: 1.4rem; /* Réduire la taille de la police pour le menu */
-        margin-left: 2rem; /* Réduire l'espacement entre les liens du menu */
+        font-size: 1.4rem; 
+        margin-left: 2rem; 
     }
 
     
 
     .home {
-        flex-direction: column; /* Disposer le texte et l'image en colonne */
-        gap: 5rem; /* Réduire l'écart */
-    }
-
-    .home-content h1 {
-        font-size: 4rem; /* Taille réduite du titre */
-    }
-
-    .home-content h3 {
-        font-size: 2.4rem; /* Ajuster la taille du sous-titre */
+        gap: 3rem;
     }
 
     .home-img img {
-        width: 50vw; /* Réduire la taille de l'image */
+        width: 80%;
     }
 
-    .about {
-        flex-direction: column; /* Disposition en colonne */
-        gap: 3rem; /* Réduire l'écart */
+    .home-content h3 {
+        font-size: 2.4rem;
+    }
+
+    .about-content h2 {
+        font-size: 4rem;
+    }
+
+    .about-content p {
+        font-size: 1.6rem;
     }
 
     .about-img img {
-        width: 60vw; /* Ajuster la taille de l'image */
+        width: 40vw; 
     }
 
     .technologies {
@@ -531,15 +586,15 @@ h2 {
     }
 
     .technologie-container {
-        grid-template-columns: 1fr; /* Passer à une colonne sur les petits écrans */
+        grid-template-columns: 1fr; 
     }
 
     .project-card img {
-        width: 80%; /* Ajuster la taille des images des projets */
+        width: 80%; 
     }
 
     .projects-box {
-        grid-template-columns: 1fr; /* Passer à une colonne sur les petits écrans */
+        grid-template-columns: 1fr; 
     }
 
     .footer .list {
@@ -554,21 +609,21 @@ h2 {
 }
 
 @media (max-width: 480px) {
-    /* Pour les petits écrans (téléphones) */
+    
     .header {
-        padding: 2rem 3%; /* Ajuster les espacements */
+        padding: 2rem 3%; 
     }
 
     .logo {
-        font-size: 2.5rem; /* Réduire la taille du logo */
+        font-size: 2.5rem; 
     }
 
     .navbar {
-        display: none; /* Cacher le menu de navigation pour les petits écrans */
+        display: none; 
     }
 
     #menu-icon {
-        display: block; /* Afficher l'icône du menu hamburger */
+        display: block; 
     }
 
     .hidden{
@@ -599,32 +654,35 @@ h2 {
     
 
     .home {
-        gap: 3rem;
-        text-align: center; /* Centrer le texte et l'image */
-    }
-
-    .home-content h1 {
-        font-size: 3.5rem; /* Taille réduite */
-    }
-
-    .home-content h3 {
-        font-size: 2rem; /* Taille réduite */
+        gap: 2rem;
     }
 
     .home-img img {
-        width: 60vw; /* Ajuster la taille de l'image */
+        width: 80%;
+    }
+
+    .home-content h3 {
+        font-size: 2rem;
+    }
+
+    .about-content h2 {
+        font-size: 3rem;
+    }
+
+    .about-content p {
+        font-size: 1.4rem;
     }
 
     .about, .technologies, .projects {
-        padding: 5rem 3%; /* Réduire le padding */
+        padding: 5rem 3%; 
     }
 
     .technologie-container {
-        grid-template-columns: 1fr; /* Passer à une colonne pour les technologies */
+        grid-template-columns: 1fr; 
     }
 
     .project-card {
-        max-width: 90%; /* Réduire la largeur des cartes */
+        max-width: 90%; 
     }
 
     .footer .list {
