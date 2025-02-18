@@ -8,6 +8,8 @@ let navbar = document.querySelector('.navbar');
 let sections = document.querySelectorAll("section");
 let navLinks = document.querySelectorAll(".navbar a");
 
+// import { inject } from "@vercel/analytics"
+// inject()
 
 
 // Gestion du défilement et du changement d'état des liens de navigation
