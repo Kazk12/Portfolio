@@ -15,7 +15,7 @@
     --secondary-bg-color:#1b0000;
     --secondary-text-color : #b74b4b;
     --text-color : rgb(233, 227, 227);
-    --main-color : #f60b0b;
+    --main-color : rgb(132, 129, 129);
 }
 
 html {
@@ -129,8 +129,6 @@ span {
     transition: 0.4s ease-in-out;
 }
 
-
-
 .home-img img:hover {
     box-shadow: 0 0 25px var(--main-color),
                 0 0 50px var(--main-color),
@@ -241,7 +239,6 @@ span {
 .about-img{
     border-radius: 50%;
 }
-
 
 .about-img img{
     position: relative;
@@ -484,7 +481,6 @@ h2 {
 
     .home-img img {
         width: 40vw; /* Réduire la taille de l'image */
-        
     }
 
     .about {
