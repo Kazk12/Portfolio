@@ -405,7 +405,7 @@ h2 {
     height: 450px;
     max-width: 450px;
     background-color: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(30px);
+
     border: 2px solid var(--main-color);
     border-radius: 3rem;
     display: flex;
@@ -432,7 +432,7 @@ h2 {
 }
 
 .project-card p {
-    font-size: 1.4rem;
+    font-size: 1.7rem;
 }
 
 .project-card:hover {
